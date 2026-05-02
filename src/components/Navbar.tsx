@@ -10,17 +10,7 @@ const links = [
 ];
 
 const Navbar: React.FC = () => {
-  const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 20);
-
-    window.addEventListener('scroll', onScroll);
-    onScroll();
-
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
 
   useEffect(() => {
     document.body.style.overflow = open ? 'hidden' : '';
@@ -47,24 +37,18 @@ const Navbar: React.FC = () => {
     <>
       {open && (
         <div
-          className="fixed inset-0 z-40 bg-black/75 backdrop-blur-sm lg:hidden"
+          className="fixed inset-0 z-40 bg-black/80 backdrop-blur-sm lg:hidden"
           onClick={() => setOpen(false)}
         />
       )}
 
-      <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled || open
-            ? 'bg-[#05090a]/95 backdrop-blur-md border-b border-white/10'
-            : 'bg-gradient-to-b from-[#05090a]/85 to-transparent'
-        }`}
-      >
+      <header className="fixed top-0 left-0 right-0 z-50 bg-[#05090a]/95 backdrop-blur-md border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex h-20 items-center justify-between gap-3">
             <a
               href="#home"
               onClick={(e) => handleClick(e, '#home')}
-              className="flex min-w-0 items-center gap-2 group"
+              className="flex min-w-0 items-center gap-2"
               aria-label="Go to homepage"
             >
               <img
@@ -120,20 +104,20 @@ const Navbar: React.FC = () => {
                 aria-label={open ? 'Close menu' : 'Open menu'}
                 aria-expanded={open}
               >
-                {open ? <X size={24} /> : <Menu size={24} />}
+                {open ? <X size={26} /> : <Menu size={26} />}
               </button>
             </div>
           </div>
 
           {open && (
             <div className="lg:hidden fixed top-20 left-0 right-0 z-50 bg-[#05090a] border-t border-white/10 border-b border-white/10 shadow-2xl">
-              <nav className="flex flex-col gap-1 px-4 py-5">
+              <nav className="flex flex-col gap-1 px-5 py-6">
                 {links.map((link) => (
                   <a
                     key={link.href}
                     href={link.href}
                     onClick={(e) => handleClick(e, link.href)}
-                    className="text-white/85 hover:text-[#f58200] hover:bg-white/5 font-bold py-4 px-4 rounded-sm transition-colors uppercase tracking-wide text-sm"
+                    className="text-white/90 hover:text-[#f58200] hover:bg-white/5 font-bold py-4 px-4 rounded-sm transition-colors uppercase tracking-wide text-base"
                   >
                     {link.label}
                   </a>
@@ -141,9 +125,9 @@ const Navbar: React.FC = () => {
 
                 <a
                   href="tel:07888845786"
-                  className="mt-4 inline-flex items-center justify-center gap-2 bg-[#f58200] hover:bg-[#ff9420] text-black font-black px-5 py-4 rounded-sm transition"
+                  className="mt-5 inline-flex items-center justify-center gap-3 bg-[#f58200] hover:bg-[#ff9420] text-black font-black px-5 py-4 rounded-sm transition text-lg"
                 >
-                  <Phone size={18} />
+                  <Phone size={20} />
                   07888 845 786
                 </a>
               </nav>
