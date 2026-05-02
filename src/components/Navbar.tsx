@@ -29,18 +29,33 @@ const Navbar: React.FC = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-[#05090a]/95 backdrop-blur-md border-b border-white/10' : 'bg-gradient-to-b from-[#05090a]/80 to-transparent'
+        scrolled
+          ? 'bg-[#05090a]/95 backdrop-blur-md border-b border-white/10'
+          : 'bg-gradient-to-b from-[#05090a]/80 to-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <a href="#home" onClick={(e) => handleClick(e, '#home')} className="flex items-center gap-3 group">
-            <div className="w-10 h-10 bg-[#f58200] flex items-center justify-center rounded-sm">
-              <span className="text-black font-black text-lg">CPS</span>
-            </div>
+          
+          {/* 🔥 LOGO REPLACED HERE */}
+          <a
+            href="#home"
+            onClick={(e) => handleClick(e, '#home')}
+            className="flex items-center gap-3 group"
+          >
+            <img
+              src="/logo.jpg"
+              alt="Complete Property Solutions logo"
+              className="h-10 md:h-12 w-auto object-contain"
+            />
+
             <div className="hidden sm:flex flex-col leading-tight">
-              <span className="text-white font-bold text-sm tracking-wide">COMPLETE PROPERTY</span>
-              <span className="text-[#f58200] font-bold text-xs tracking-[0.2em]">SOLUTIONS</span>
+              <span className="text-white font-bold text-sm tracking-wide">
+                COMPLETE PROPERTY
+              </span>
+              <span className="text-[#f58200] font-bold text-xs tracking-[0.2em]">
+                SOLUTIONS
+              </span>
             </div>
           </a>
 
@@ -65,6 +80,7 @@ const Navbar: React.FC = () => {
               <Phone size={16} />
               <span className="text-sm">07888 845 786</span>
             </a>
+
             <button
               onClick={() => setOpen(!open)}
               className="lg:hidden text-white p-2"
@@ -88,6 +104,7 @@ const Navbar: React.FC = () => {
                   {link.label}
                 </a>
               ))}
+
               <a
                 href="https://api.whatsapp.com/message/G46WW4LTICNGL1?autoload=1&app_absent=0"
                 className="mt-3 inline-flex items-center justify-center gap-2 bg-[#f58200] text-black font-bold px-5 py-3 rounded-sm"
