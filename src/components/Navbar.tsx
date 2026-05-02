@@ -14,7 +14,6 @@ const Navbar: React.FC = () => {
 
   useEffect(() => {
     document.body.style.overflow = open ? 'hidden' : '';
-
     return () => {
       document.body.style.overflow = '';
     };
@@ -35,6 +34,7 @@ const Navbar: React.FC = () => {
 
   return (
     <>
+      {/* Overlay */}
       {open && (
         <div
           className="fixed inset-0 z-40 bg-black/80 backdrop-blur-sm lg:hidden"
@@ -42,19 +42,28 @@ const Navbar: React.FC = () => {
         />
       )}
 
+      {/* Navbar */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-[#05090a]/95 backdrop-blur-md border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex h-20 items-center justify-between gap-3">
+
+            {/* Logo */}
             <a
               href="#home"
               onClick={(e) => handleClick(e, '#home')}
-              className="flex min-w-0 items-center gap-2"
+              className="flex items-center gap-2"
               aria-label="Go to homepage"
             >
               <img
-                src="/logo.jpg"
+                src="/logo2.png"
                 alt="Complete Property Solutions logo"
-                className="h-9 w-auto max-w-[120px] object-contain sm:h-10 sm:max-w-[150px] md:h-12 md:max-w-[180px] lg:max-w-none"
+                className="
+                  h-12
+                  sm:h-14
+                  md:h-16
+                  lg:h-16
+                  object-contain
+                "
               />
 
               <div className="hidden xl:flex flex-col leading-tight">
@@ -67,6 +76,7 @@ const Navbar: React.FC = () => {
               </div>
             </a>
 
+            {/* Desktop nav */}
             <nav className="hidden lg:flex items-center gap-8">
               {links.map((link) => (
                 <a
@@ -80,7 +90,10 @@ const Navbar: React.FC = () => {
               ))}
             </nav>
 
-            <div className="flex shrink-0 items-center gap-3">
+            {/* Right side */}
+            <div className="flex items-center gap-3">
+
+              {/* Full phone button (XL screens) */}
               <a
                 href="tel:07888845786"
                 className="hidden xl:inline-flex items-center gap-2 bg-[#f58200] hover:bg-[#ff9420] text-black font-bold px-5 py-2.5 rounded-sm transition-all shadow-lg hover:shadow-[#f58200]/30 hover:-translate-y-0.5"
@@ -89,6 +102,7 @@ const Navbar: React.FC = () => {
                 <span className="text-sm">07888 845 786</span>
               </a>
 
+              {/* Icon phone (tablet) */}
               <a
                 href="tel:07888845786"
                 className="hidden sm:inline-flex xl:hidden items-center justify-center bg-[#f58200] hover:bg-[#ff9420] text-black font-bold p-3 rounded-sm transition-all"
@@ -97,6 +111,7 @@ const Navbar: React.FC = () => {
                 <Phone size={18} />
               </a>
 
+              {/* Hamburger */}
               <button
                 type="button"
                 onClick={() => setOpen((prev) => !prev)}
@@ -109,6 +124,7 @@ const Navbar: React.FC = () => {
             </div>
           </div>
 
+          {/* Mobile menu */}
           {open && (
             <div className="lg:hidden fixed top-20 left-0 right-0 z-50 bg-[#05090a] border-t border-white/10 border-b border-white/10 shadow-2xl">
               <nav className="flex flex-col gap-1 px-5 py-6">
