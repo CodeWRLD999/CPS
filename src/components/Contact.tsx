@@ -60,7 +60,7 @@ const Contact: React.FC = () => {
           {/* Contact info */}
           <div className="lg:col-span-2 space-y-4">
             <a
-              href="tel:07888845786"
+              href="https://api.whatsapp.com/message/G46WW4LTICNGL1?autoload=1&app_absent=0"
               className="block group bg-[#f58200] hover:bg-[#ff9420] p-8 rounded-sm transition-all hover:-translate-y-1"
             >
               <Phone className="text-black mb-4" size={32} />

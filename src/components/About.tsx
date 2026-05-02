@@ -20,12 +20,8 @@ const About: React.FC = () => {
           <div className="relative order-2 lg:order-1">
             <div className="absolute -top-4 -left-4 w-full h-full border-2 border-[#f58200] rounded-sm" />
             <div className="relative overflow-hidden rounded-sm">
-              <img src={ABOUT_IMG} alt="Skilled tradesman at work" className="w-full h-[500px] object-cover" />
+              <img src='/logo.jpg' alt="Skilled tradesman at work" className="w-full h-[500px] object-contain p-8 bg-black" />
               <div className="absolute inset-0 bg-gradient-to-t from-[#05090a]/60 to-transparent" />
-            </div>
-            <div className="absolute -bottom-6 -right-6 bg-[#f58200] p-6 rounded-sm shadow-2xl max-w-[220px]">
-              <div className="text-black font-black text-4xl leading-none">15+</div>
-              <div className="text-black font-bold text-sm mt-1">Years of trusted experience</div>
             </div>
           </div>
 
@@ -57,7 +53,7 @@ const About: React.FC = () => {
             </ul>
 
             <a
-              href="tel:07888845786"
+              href="https://api.whatsapp.com/message/G46WW4LTICNGL1?autoload=1&app_absent=0"
               className="inline-flex items-center gap-2 bg-[#f58200] hover:bg-[#ff9420] text-black font-bold px-7 py-4 rounded-sm transition-all hover:-translate-y-0.5"
             >
               SPEAK TO OUR TEAM

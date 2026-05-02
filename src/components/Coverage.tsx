@@ -4,7 +4,7 @@ import { MapPin } from 'lucide-react';
 const areas = [
   'Derby', 'Long Eaton', 'Ilkeston', 'Burton-on-Trent',
   'Belper', 'Ripley', 'Heanor', 'Alfreton',
-  'Ashbourne', 'Matlock', 'Castle Donington', 'Swadlincote',
+  'Ashbourne', 'Matlock', 'Castle Donington', 'Swadlincote', 'Nottingham'
 ];
 
 const Coverage: React.FC = () => {
@@ -49,7 +49,7 @@ const Coverage: React.FC = () => {
         <div className="text-center mt-12">
           <p className="text-white/50 mb-5">Don't see your area listed?</p>
           <a
-            href="tel:07888845786"
+            href="https://api.whatsapp.com/message/G46WW4LTICNGL1?autoload=1&app_absent=0"
             className="inline-flex items-center gap-2 bg-transparent border-2 border-[#f58200] text-[#f58200] hover:bg-[#f58200] hover:text-black font-bold px-7 py-4 rounded-sm transition-all"
           >
             CALL US TO CHECK

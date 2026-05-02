@@ -89,7 +89,7 @@ const Navbar: React.FC = () => {
                 </a>
               ))}
               <a
-                href="tel:07888845786"
+                href="https://api.whatsapp.com/message/G46WW4LTICNGL1?autoload=1&app_absent=0"
                 className="mt-3 inline-flex items-center justify-center gap-2 bg-[#f58200] text-black font-bold px-5 py-3 rounded-sm"
               >
                 <Phone size={16} /> 07888 845 786

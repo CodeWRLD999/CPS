@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
     <section id="home" className="relative min-h-screen flex items-center overflow-hidden bg-[#05090a]">
       {/* Background image with overlay */}
       <div className="absolute inset-0">
-        <img src={HERO_IMG} alt="Professional tradesman at work" className="w-full h-full object-cover opacity-40" />
+        <img src="/picture1.jpg" alt="Professional tradesman at work" className="w-full h-full object-cover opacity-40" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#05090a] via-[#05090a]/85 to-[#05090a]/40" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#05090a] via-transparent to-transparent" />
       </div>
@@ -40,7 +40,7 @@ const Hero: React.FC = () => {
           </h1>
 
           <p className="text-lg sm:text-xl text-white/70 max-w-2xl leading-relaxed mb-10 font-light">
-            Reliable, professional tradesmen delivering Gas, Heating, Plumbing and Electrical services across Derby. Fully qualified. Fully insured. Built on trust.
+            Reliable, professional tradesmen delivering Gas, Heating, Plumbing and Electrical services across Derby and Nottingham. Fully qualified. Fully insured. Built on trust.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mb-16">
@@ -74,13 +74,6 @@ const Hero: React.FC = () => {
               <div>
                 <div className="text-white font-bold text-sm">5-Star Service</div>
                 <div className="text-white/50 text-xs">Trusted Locally</div>
-              </div>
-            </div>
-            <div className="flex items-center gap-3">
-              <div className="text-[#f58200] font-black text-2xl flex-shrink-0">15+</div>
-              <div>
-                <div className="text-white font-bold text-sm">Years Experience</div>
-                <div className="text-white/50 text-xs">In the trade</div>
               </div>
             </div>
             <div className="flex items-center gap-3">
