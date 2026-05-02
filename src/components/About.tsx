@@ -20,7 +20,7 @@ const About: React.FC = () => {
           <div className="relative order-2 lg:order-1">
             <div className="absolute -top-4 -left-4 w-full h-full border-2 border-[#f58200] rounded-sm" />
             <div className="relative overflow-hidden rounded-sm">
-              <img src='/logo.jpg' alt="Skilled tradesman at work" className="w-full h-[500px] object-contain p-8 bg-black" />
+              <img src='/picture3.png' alt="Skilled tradesman at work" className="w-full h-[500px] object-contain p-8 bg-black" />
               <div className="absolute inset-0 bg-gradient-to-t from-[#05090a]/60 to-transparent" />
             </div>
           </div>
