@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
       {/* 📸 Background image (FULL image, centered) */}
       <div className="absolute inset-0 -z-30 flex items-center justify-center bg-[#05090a]">
         <img
-          src="/picture2.png"
+          src="/picture2.jpg"
           alt=""
           aria-hidden="true"
           className="max-h-full max-w-full object-contain opacity-50"

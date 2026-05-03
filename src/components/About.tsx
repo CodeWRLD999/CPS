@@ -22,7 +22,7 @@ const About: React.FC = () => {
 
             <div className="relative overflow-hidden rounded-sm">
               <img
-                src="/picture3.png"
+                src="/picture3.jpg"
                 alt="Boiler installation with CPS branding"
                 className="w-full h-[280px] sm:h-[350px] md:h-[400px] lg:h-[500px] object-cover"
               />
