@@ -34,7 +34,7 @@ const Contact: React.FC = () => {
     setLoading(true);
 
     try {
-      const res = await fetch('/api/contact', {
+      const res = await fetch('/api/contact.js', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
