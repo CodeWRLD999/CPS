@@ -9,7 +9,7 @@ const MobileCallBar: React.FC = () => {
   return (
     <div className="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#05090a]/95 backdrop-blur-md border-t border-white/10 p-3 flex gap-2">
       <a
-        href="tel:07888845786"
+        href="https://api.whatsapp.com/message/G46WW4LTICNGL1?autoload=1&app_absent=0"
         className="flex-1 inline-flex items-center justify-center gap-2 bg-[#f58200] text-black font-bold py-3.5 rounded-sm"
       >
         <Phone size={18} /> CALL NOW

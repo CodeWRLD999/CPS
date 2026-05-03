@@ -57,7 +57,7 @@ const Hero: React.FC = () => {
           {/* CTA */}
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <a
-              href="tel:07888845786"
+              href="https://api.whatsapp.com/message/G46WW4LTICNGL1?autoload=1&app_absent=0"
               className="inline-flex items-center justify-center gap-3 rounded-sm bg-[#f58200] px-7 py-4 text-base font-black text-black transition hover:bg-[#ff9420] sm:text-lg"
             >
               <Phone size={20} />
