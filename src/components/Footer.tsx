@@ -29,10 +29,10 @@ const Footer: React.FC = () => {
               Trusted Derby tradesmen specialising in gas, heating, plumbing and electrical services for homes and businesses across the East Midlands.
             </p>
             <div className="flex gap-3">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="w-10 h-10 bg-[#111719] hover:bg-[#f58200] border border-white/10 hover:border-[#f58200] flex items-center justify-center rounded-sm transition-all group">
+              <a href="https://www.facebook.com/profile.php?id=61587407034378" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="w-10 h-10 bg-[#111719] hover:bg-[#f58200] border border-white/10 hover:border-[#f58200] flex items-center justify-center rounded-sm transition-all group">
                 <Facebook className="text-white group-hover:text-black" size={18} />
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-10 h-10 bg-[#111719] hover:bg-[#f58200] border border-white/10 hover:border-[#f58200] flex items-center justify-center rounded-sm transition-all group">
+              <a href="https://www.instagram.com/cpscompletepropertysolutions" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-10 h-10 bg-[#111719] hover:bg-[#f58200] border border-white/10 hover:border-[#f58200] flex items-center justify-center rounded-sm transition-all group">
                 <Instagram className="text-white group-hover:text-black" size={18} />
               </a>
             </div>
